@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.2)
+
+PROJECT(dmfake)
+
+LIST(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
+INCLUDE(cmake/ModuleImport.cmake)
+INCLUDE(cmake/ModuleCompileOptions.cmake)
+ModuleSetCompileOptions()
+ModuleSetWinCompilerFlags()
+
+SET(DMFAKE_VERSION_MAJOR "1")
+SET(DMFAKE_VERSION_MINOR "0")
+SET(DMFAKE_VERSION_PATCH "1")
+SET(DMFAKE_VERSION "${DMFAKE_VERSION_MAJOR}.${DMFAKE_VERSION_MINOR}.${DMFAKE_VERSION_PATCH}")
+
+MESSAGE(STATUS "VERSION: ${DMFAKE_VERSION}")
+
+OPTION(USE_DMFAKE "use dmfake" OFF)
+
+ExeImport("test" "")
