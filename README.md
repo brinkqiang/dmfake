@@ -26,6 +26,5 @@ dmfake
 ```cpp
 ```
 ## Contacts
-[![Join the chat](https://badges.gitter.im/brinkqiang/dmfake/Lobby.svg)](https://gitter.im/brinkqiang/dmfake)
 
 ## Thanks
